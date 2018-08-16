@@ -1,28 +1,43 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  
+<!-- 2 inputai + mygtukas. ivedam img src ir title ir susikuria kortele -->
+<!-- data() -->
+<!-- methods: -->
+
+
+  <div class="app container">
+      <AppCard imageInside="http://kittytonpost.com/wp-content/uploads/2013/07/kittytonpost_wallpaper06.jpg" title="cat"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppCard from './components/AppCard.vue'
 
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    AppCard
+  },
+  
+  methods: {
+    
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss" scoped>
+  .app {
+    padding-top: 50px;
+  }
 </style>
+
+
+
+<!-- <p> {{ input }}</p> -->
+      <!-- <button @click="addTodo">Prideti</button>
+      <ul>
+        <li v-for="(todo, index) in todos" :key="index">
+          <s v-if="todo.done"> {{ todo.value}} </s>
+          <template v-else>{{ todo.value }}</template>
+          <button @click="setDoneTodo(index)"> X </button>
+        </li>
+      </ul> -->
